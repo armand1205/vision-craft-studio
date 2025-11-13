@@ -1,0 +1,7 @@
+.hero {
+    &__container {
+        background-color: url("../../media/img/bg-hero.svg");
+        padding-block: calc(var(--spacing) * 16);
+        padding-inline: calc(var(--spacing) * 10);
+    }
+}

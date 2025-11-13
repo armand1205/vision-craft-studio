@@ -1,0 +1,86 @@
+@font-face {
+    font-family: "Inter";
+    src: url("../assets/font/Inter.woff2") format("woff2");
+    font-display: swap;
+}
+
+/*
+@URL: https://wearerequired.github.io/fluidity/
+Smallest viewport: 320px
+Largest viewport: 1536px  
+*/
+body,
+.body {
+    font-size: clamp(17px, calc(16.736842105263158px + 0.08223684210526315vw), 18px);
+    font-weight: 400;
+    line-height: 150%;
+}
+
+.display-2 {
+    font-size: clamp(49px, calc(48.21052631578947px + 0.24671052631578946vw), 52px);
+    font-weight: 700;
+    line-height: 138%;
+    letter-spacing: -1.04px;
+}
+
+.display-1 {
+    font-size: clamp(41px, calc(40.21052631578947px + 0.24671052631578946vw), 44px);
+    font-weight: 700;
+    line-height: 138%;
+    letter-spacing: -0.88px;
+}
+
+h1,
+.h1 {
+    font-size: clamp(34px, calc(33.21052631578947px + 0.24671052631578946vw), 37px);
+    font-weight: 700;
+    line-height: 138%;
+    letter-spacing: -0.74px;
+}
+
+h2,
+.h2 {
+    font-size: clamp(29px, calc(28.473684210526315px + 0.1644736842105263vw), 31px);
+    font-weight: 600;
+    line-height: 138%;
+    letter-spacing: -0.62px;
+}
+
+h3,
+.h3 {
+    font-size: clamp(24px, calc(23.473684210526315px + 0.1644736842105263vw), 26px);
+    font-weight: 500;
+    line-height: 138%;
+    letter-spacing: -0.52px;
+}
+
+h4,
+.h4 {
+    font-size: clamp(20px, calc(19.736842105263158px + 0.08223684210526315vw), 21px);
+    font-weight: 500;
+    line-height: 138%;
+    letter-spacing: -0.42px;
+}
+
+h5,
+.h5 {
+    font-size: clamp(17px, calc(16.736842105263158px + 0.08223684210526315vw), 18px);
+    font-weight: 400;
+    line-height: 138%;
+    letter-spacing: -0.34px;
+}
+
+h6,
+.h6 {
+    font-size: clamp(14px, calc(13.473684210526315px + 0.1644736842105263vw), 16px);
+    font-weight: 500;
+    line-height: 138%;
+    letter-spacing: -0.36px;
+}
+
+.quote {
+    font-size: clamp(17px, calc(16.736842105263158px + 0.08223684210526315vw), 18px);
+    font-weight: 400;
+    line-height: 150%;
+    font-style: italic;
+}

@@ -1,0 +1,104 @@
+/* 1. Use a more-intuitive box-sizing model */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* 2. Remove default margin */
+* {
+    margin: 0;
+}
+
+/* 3. Enable smooth scrolling when user prefers motion */
+@media (prefers-reduced-motion: no-preference) {
+    html {
+        scroll-behavior: smooth;
+    }
+}
+
+/* 4. Remove list styles on ul, ol with list role */
+ul[role="list"],
+ol[role="list"] {
+    list-style: none;
+}
+
+/* 5. Improve text rendering */
+body {
+    font-family: var(--font-family);
+    color: var(--color-primary-gray-950);
+    -webkit-font-smoothing: antialiased;
+}
+
+/* 6. Improve media defaults */
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+/* 7. Inherit fonts for form controls */
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+/* 8. Avoid text overflows */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    overflow-wrap: break-word;
+}
+
+p,
+h1 {
+    text-wrap: balance;
+}
+
+/* 9. Improve line wrapping */
+p {
+    text-wrap: balance;
+}
+
+/* 10. Create a root stacking context */
+#root,
+#__next {
+    isolation: isolate;
+}
+
+/* 11. Improve link styling */
+a:not([class]) {
+    text-underline-offset: 0.25em;
+    text-decoration-thickness: 1px;
+    text-decoration-color: currentColor;
+}
+
+/* 12. Improve focus indicators */
+:focus-visible {
+    outline: 2px solid currentColor;
+    outline-offset: 2px;
+}
+
+/* 13. Respect reduced motion preferences */
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}
