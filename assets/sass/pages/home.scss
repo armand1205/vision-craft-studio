@@ -1,0 +1,60 @@
+.hero {
+    &__wrapper {
+        color: white;
+        // background-color: #e5e5f7;
+        background-color: #000005;
+        opacity: 0.8;
+        background: radial-gradient(circle, transparent 20%, #000005 20%, #000005 80%, transparent 80%, transparent), radial-gradient(circle, transparent 20%, #000005 20%, #000005 80%, transparent 80%, transparent) 20px 20px, linear-gradient(#fd5e12 1.6px, transparent 1.6px) 0 -0.8px, linear-gradient(90deg, #fd5e12 1.6px, #000005 1.6px) -0.8px 0;
+        background-size: 40px 40px, 40px 40px, 20px 20px, 20px 20px;
+
+        margin-inline: auto;
+        border: 1px solid black;
+
+        overflow: hidden;
+
+        // 16 - 32
+        padding-block: clamp(1rem, 0.342rem + 3.289vi, 3.5rem);
+        padding-inline: clamp(1rem, 0.737rem + 1.316vi, 2rem);
+        // padding-block: calc(var(--spacing) * 20);
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: calc(var(--spacing) * 12);
+    }
+
+    &__container {
+        display: flex;
+        align-items: center;
+        gap: calc(var(--spacing) * 12);
+
+        padding: calc(var(--spacing) * 6);
+
+        p {
+            margin-top: calc(var(--spacing) * 2);
+        }
+
+        .btn {
+            margin-top: calc(var(--spacing) * 8);
+        }
+    }
+
+    &__content {
+        max-width: 700px;
+    }
+
+    &__image {
+        width: 350px;
+        height: 350px;
+        flex-shrink: 0;
+
+        overflow: hidden;
+        border-radius: calc(var(--spacing) * 5);
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+}

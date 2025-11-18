@@ -6,7 +6,7 @@
         // width: 100%;
         // z-index: 100;
 
-        padding-inline: calc(var(--spacing) * 10);
+        padding-inline: clamp(1rem, 0.605rem + 1.974vi, 2.5rem);
         padding-block: calc(var(--spacing) * 6);
 
         display: flex;
@@ -17,20 +17,14 @@
     }
 
     &__logo {
+        width: 150px;
         img {
             color: var(--color-midnight-blue-500);
         }
     }
 
-    &__nav {
-    }
-
-    &__btn {
-        display: none;
-    }
-
     &__list {
-        display: flex;
+        display: none;
         align-items: center;
         gap: calc(var(--spacing) * 20);
         padding: 0;
@@ -46,7 +40,7 @@
     }
 
     &__social {
-        display: flex;
+        display: none;
         align-items: center;
         gap: calc(var(--spacing) * 4);
 
@@ -55,6 +49,78 @@
             height: calc(var(--spacing) * 6);
 
             svg {
+                flex-shrink: 0;
+            }
+        }
+    }
+}
+
+.mobile {
+    &__container {
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 300px;
+        height: 100vh;
+        background-color: white;
+        z-index: 1000;
+        padding: calc(var(--spacing) * 4);
+        box-shadow: -2px 0 10px rgba(0, 0, 0, 0.1);
+        transform: translateX(100%);
+        transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+        opacity: 0;
+        pointer-events: none;
+
+        &.active {
+            transform: translateX(0);
+            opacity: 1;
+            pointer-events: all;
+        }
+
+        > .btn__icon {
+            margin-left: auto;
+        }
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: calc(var(--spacing) * 6);
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        text-transform: uppercase;
+        font-weight: 600;
+
+        li {
+            padding-block: calc(var(--spacing) * 2);
+
+            a {
+                color: var(--color-midnight-blue-500);
+                text-decoration: none;
+            }
+        }
+    }
+
+    &__social {
+        display: flex;
+        align-items: center;
+        gap: calc(var(--spacing) * 4);
+
+        a {
+            display: flex;
+            align-items: center;
+            gap: calc(var(--spacing) * 2);
+
+            svg {
+                width: calc(var(--spacing) * 6);
+                height: calc(var(--spacing) * 6);
                 flex-shrink: 0;
             }
         }

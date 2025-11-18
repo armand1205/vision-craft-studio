@@ -1,7 +1,24 @@
 .btn {
-    color: white;
-    background-color: black;
+    color: black;
+    background-color: white;
 
+    padding: 10px 20px;
     border: 1px solid black;
     border-radius: 10px;
+
+    cursor: pointer;
+
+    &__icon {
+        padding: 0;
+        width: 32px;
+        height: 32px;
+        border: none;
+        background-color: transparent;
+        color: black;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
+        cursor: pointer;
+    }
 }

@@ -1,11 +1,11 @@
 // BASE
 @use "base/global.scss";
+@use "base/layout.scss";
 @use "base/typography.scss";
 @use "base/variables.scss";
 
 // BLOC
 @use "bloc/header.scss";
-@use "bloc/hero.scss";
 @use "bloc/footer.scss";
 
 // COMPONENTS
