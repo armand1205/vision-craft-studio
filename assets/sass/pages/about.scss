@@ -1,0 +1,22 @@
+.about {
+    &__wrapper {
+        padding-block: clamp(2rem, 1.684rem + 1.579vi, 4rem);
+        padding-inline: clamp(1rem, 0.737rem + 1.316vi, 2rem);
+    }
+
+    &__container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__content {
+        max-width: 800px;
+        text-align: center;
+    }
+
+    &__description {
+        margin-top: calc(var(--spacing) * 4);
+    }
+}
+
