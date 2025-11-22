@@ -1,6 +1,7 @@
 {
   "scripts": {
-    "dev": "sass --watch assets/sass/import.scss:build/style.css --style compressed"
+    "dev": "sass --watch assets/sass/import.scss:build/style.css --style compressed",
+    "build": "sass assets/sass/import.scss:build/style.css --style compressed"
   },
   "devDependencies": {
     "sass": "^1.93.2"
