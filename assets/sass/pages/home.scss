@@ -41,6 +41,9 @@
         }
 
         .btn {
+            text-decoration: none;
+            position: relative;
+            z-index: 1;
             margin-top: calc(var(--spacing) * 16);
         }
     }
