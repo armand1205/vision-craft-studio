@@ -204,6 +204,21 @@
     // ============================================
     // box shadows
     // ============================================
-    --shadow-card: 0 2px 12px rgba(0, 0, 0, 0.12);
-    --shadow-card-hover: 0 8px 24px rgba(0, 0, 0, 0.12);
+
+    --shadow-1: 0px 1px 1px 1px rgba(7, 12, 31, 0.05);
+    --shadow-2: 0px 2px 2px 1px rgba(7, 12, 31, 0.08);
+    --shadow-3: 0px 3px 3px 1px rgba(7, 12, 31, 0.08);
+    --shadow-4: 0px 4px 5px 1px rgba(7, 12, 31, 0.08);
+    --shadow-6: 0px 6px 10px 1px rgba(7, 12, 31, 0.08);
+    --shadow-8: 0px 8px 10px 1px rgba(7, 12, 31, 0.05);
+    --shadow-9: 0px 9px 12px 1px rgba(7, 12, 31, 0.05);
+    --shadow-12: 0px 12px 17px 1px rgba(7, 12, 31, 0.05);
+    --shadow-16: 0px 16px 24px 1px rgba(7, 12, 31, 0.05);
+    --shadow-t-16: 0px -16px 24px 1px rgba(7, 12, 31, 0.05);
+    --shadow-24: 0px 24px 38px 1px rgba(7, 12, 31, 0.05);
+    --shadow-r-24: 24px 0px 38px 1px rgba(7, 12, 31, 0.05);
+    --shadow-28: 0px 24px 38px 0px rgba(0, 93, 148, 0.22);
+    --shadow-t-28: 0 -28px 42px 1px rgba(7, 12, 31, 0.1);
+
+    --transition: all 0.3s ease;
 }

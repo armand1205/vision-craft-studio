@@ -32,6 +32,10 @@ body {
     font-family: var(--font-family);
     color: var(--color-primary-gray-950);
     -webkit-font-smoothing: antialiased;
+    background: url("../../assets/media/bg/bg-body.svg") no-repeat center center;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 /* 6. Improve media defaults */

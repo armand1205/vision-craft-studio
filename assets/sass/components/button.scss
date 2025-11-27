@@ -1,12 +1,21 @@
 .btn {
-    color: black;
-    background-color: white;
+    width: 100%;
+    color: var(--color-gray-50);
+    background-color: var(--color-electric-blue-600);
 
-    padding: 10px 20px;
-    border: 2px solid black;
+    padding: 16px 32px;
+    border: 2px solid var(--color-electric-blue-600);
     border-radius: 10px;
 
     cursor: pointer;
+    box-shadow: var(--shadow-3);
+    transition: var(--transition);
+
+    &:hover {
+        background-color: var(--color-gray-50);
+        color: var(--color-electric-blue-700);
+        border-color: var(--color-electric-blue-700);
+    }
 
     &__icon {
         padding: 0;
@@ -20,5 +29,11 @@
         justify-content: center;
         flex-shrink: 0;
         cursor: pointer;
+    }
+}
+
+@media (min-width: 768px) {
+    .btn {
+        width: fit-content;
     }
 }
